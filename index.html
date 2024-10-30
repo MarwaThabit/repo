@@ -14,15 +14,15 @@
         <nav class="navbar navbar-expand-lg  navbar-dark  fixed-top px-3 " style="width: 100vw;">
             <a href="#" class="navbar-brand me-0">
                 <img src="Images/logo-light.webp" class="w-25">
-                <span class="ms-lg-4  border-end pe-2" style="font-size: 0.8rem;">MUSEUM</span>
+                <span class="ms-lg-4  border-end pe-2 ms-3" style="font-size: 0.8rem;">MUSEUM</span>
             </a><!-- logo -->
 
-            <button class="navbar-toggler"  data-bs-toggle="collapse" data-bs-target="#mynavbar"  style="padding: 1px;">
+            <button class="navbar-toggler p-0"  data-bs-toggle="collapse" data-bs-target="#mynavbar" >
                 <span class="navbar-toggler-icon "></span>
             </button><!-- menu-icon -->
     
             <div class="collapse navbar-collapse justify-content-between flex-grow-0" id="mynavbar" style="width: 85%;">
-                <ul class="navbar-nav justify-content-between " style="width: 30%;" >
+                <ul class="navbar-nav justify-content-between " style="width: 45%;" >
                     <li class="nav-item"><a href="#" class="nav-link active">Home</a></li>
                     <li class="nav-item dropdown">
                         <a href="#" class="nav-link active dropdown-toggle border rounded p-1 " data-bs-toggle="dropdown"><span>E</span>vents</a>
@@ -209,7 +209,7 @@
                     <div class="modal-body">
                         <p class="text-white">Content has been submitted!</p>
                         <p class="text-white text-end">!شكرا لتواصلكم معنا</p>
-                        <button class="btn btn-danger d-block ms-auto" data-bs-dismiss="modal">Ok</button>
+                        <button class="btn btn-dark d-block ms-auto" data-bs-dismiss="modal">Ok</button>
                     </div><!-- model-body -->
                 </div><!-- model-content -->
             </div><!-- model-dialog -->
@@ -332,7 +332,7 @@
             Our Team
         </h2>
         <div class="row w-100 m-0 justify-content-evenly mt-5">
-            <div class="card col-lg-4 col-md-6 mb-5 px-0" style="height:500px;width:400px">
+            <div class="card col-lg-4 col-md-6 mb-5 px-0" style="height:500px;width:350px">
                 <img class="card-img-top rounded" src="Images/h3-team-img-1-600x600.jpg"  style="height: 100%;">
                 <div class="card-img-overlay d-flex flex-column justify-content-between">
                     <div>
@@ -346,7 +346,7 @@
                     </div>
                 </div>
             </div><!-- first-card -->
-            <div class="card col-lg-4 col-md-6 mb-5 px-0" style="height:500px;width:400px">
+            <div class="card col-lg-4 col-md-6 mb-5 px-0" style="height:500px;width:350px">
                 <img class="card-img-top rounded" src="Images/h3-team-img-2-600x600.jpg" style="height: 100%;">
                 <div class="card-img-overlay d-flex flex-column justify-content-between">
                     <div>
@@ -360,7 +360,7 @@
                     </div>
                 </div>
             </div><!-- second-card -->
-            <div class="card col-lg-4 col-md-6 mb-5 px-0" style="height:500px;width:400px">
+            <div class="card col-lg-4 col-md-6 mb-5 px-0" style="height:500px;width:350px">
                 <img class="card-img-top rounded" src="Images/h3-team-img-3-600x600.jpg"  style="height: 100%;">
                 <div class="card-img-overlay d-flex flex-column justify-content-between">
                     <div>
@@ -380,8 +380,8 @@
     <hr>
 <!-- todo==================================================News_Section================================================= -->    
     <h2 class="text-white text-center bg-dark py-3 shadow mt-3 mb-5">News</h2>
-    <section class=" d-flex flex-column m-auto" style="width: 90%;"> 
-        <div class="bg-light  mb-5 shadow rounded position-relative picture" >
+    <section class=" d-flex flex-column m-auto news" style="width: 90%;"> 
+        <div class="bg-light  mb-5 shadow rounded " >
             <!-- Text Section -->
             <div class=" p-4" style="width: 79%;" >
                 <h5 class="text-primary">Podcast Title</h5>
@@ -393,14 +393,15 @@
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, fugiat asperiores inventore...
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, fugiat asperiores inventore...
                 </p>
-                <button class="btn btn-secondary btn-sm">Podcast</button>
-                <button class="btn btn-secondary btn-sm">55 mins</button>
-                <button class="btn btn-primary   btn-sm">Play Episode</button>
+                <div>
+                    <button class="btn btn-secondary btn-sm">Podcast</button>
+                    <button class="btn btn-secondary btn-sm">55 mins</button>
+                    <button class="btn btn-primary   btn-sm">Play Episode</button>
+                </div>
             </div>
-            <div class="zoom rounded position-absolute top-0 end-0 h-100" style="width: 34%;clip-path: polygon(28% 0, 100% 0%, 100% 100%, 43% 100%); background:url(Images/exibit-heading.jpg) center/cover;"></div>
-            <!-- <img src="Images/exibit-heading.jpg"  class=""> -->
+            <img src="Images/exibit-heading.jpg"  class="rounded ">
         </div>
-        <div class="bg-light d-flex flex-row-reverse mb-5 shadow rounded position-relative" >
+        <div class="bg-light  mb-5 shadow rounded " >
             <!-- Text Section -->
             <div class=" p-4 " style="width: 76%;" >
                 <h5 class="text-primary">Podcast Title</h5>
@@ -412,14 +413,16 @@
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, fugiat asperiores inventore...
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, fugiat asperiores inventore...
                 </p>
-                <button class="btn btn-secondary btn-sm">Podcast</button>
-                <button class="btn btn-secondary btn-sm">55 mins</button>
-                <button class="btn btn-primary btn-sm">Play Episode</button>
+                <div>
+                    <button class="btn btn-secondary btn-sm">Podcast</button>
+                    <button class="btn btn-secondary btn-sm">55 mins</button>
+                    <button class="btn btn-primary btn-sm">Play Episode</button>
+                </div>
             </div>
 
-            <img src="Images/exibit-heading.jpg" style="width: 34%;clip-path: polygon(0 0, 72% 0%, 57% 100%, 0 100%);" class="rounded position-absolute top-0 start-0 h-100">
+            <img src="Images/exibit-heading.jpg"  class="rounded ">
         </div>
-        <div class="bg-light  mb-5 shadow rounded position-relative">
+        <div class="bg-light  mb-5 shadow rounded " >
             <!-- Text Section -->
             <div class=" p-4" style="width: 79%;" >
                 <h5 class="text-primary">Podcast Title</h5>
@@ -431,14 +434,15 @@
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, fugiat asperiores inventore...
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, fugiat asperiores inventore...
                 </p>
-                <button class="btn btn-secondary btn-sm">Podcast</button>
-                <button class="btn btn-secondary btn-sm">55 mins</button>
-                <button class="btn btn-primary btn-sm">Play Episode</button>
+                <div>
+                    <button class="btn btn-secondary btn-sm">Podcast</button>
+                    <button class="btn btn-secondary btn-sm">55 mins</button>
+                    <button class="btn btn-primary   btn-sm">Play Episode</button>
+                </div>
             </div>
-
-            <img src="Images/exibit-heading.jpg" style="width: 34%;clip-path: polygon(28% 0, 100% 0%, 100% 100%, 43% 100%)" class="rounded position-absolute top-0 end-0 h-100">
+            <img src="Images/exibit-heading.jpg"  class="rounded ">
         </div>
-        <div class="bg-light d-flex flex-row-reverse mb-5 shadow rounded position-relative" >
+        <div class="bg-light  mb-5 shadow rounded " >
             <!-- Text Section -->
             <div class=" p-4 " style="width: 76%;" >
                 <h5 class="text-primary">Podcast Title</h5>
@@ -450,18 +454,20 @@
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, fugiat asperiores inventore...
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, fugiat asperiores inventore...
                 </p>
-                <button class="btn btn-secondary btn-sm">Podcast</button>
-                <button class="btn btn-secondary btn-sm">55 mins</button>
-                <button class="btn btn-primary btn-sm">Play Episode</button>
+                <div>
+                    <button class="btn btn-secondary btn-sm">Podcast</button>
+                    <button class="btn btn-secondary btn-sm">55 mins</button>
+                    <button class="btn btn-primary btn-sm">Play Episode</button>
+                </div>
             </div>
 
-            <img src="Images/exibit-heading.jpg" style="width: 34%;clip-path: polygon(0 0, 72% 0%, 57% 100%, 0 100%);" class="rounded position-absolute top-0 start-0 h-100">
+            <img src="Images/exibit-heading.jpg"  class="rounded ">
         </div>
     </section>
 <!-- todo==================================================Join_US_Section================================================= -->    
-    <section class="container">
+    <section class=" m-auto" style="width: 90%;">
         <h3 class="text-center">Join Us</h3>
-        <div class="row w-100 m-0 justify-content-between mt-5">
+        <div class="row w-100 m-0 justify-content-lg-between justify-content-center mt-5">
             <div class="  bg-light text-center col-lg-3 col-md-6 py-3 shadow-sm rounded mb-5"  style="width: 290px">
                 <h5>Subscribe Now</h5>
                 <a href="#" class="d-block text-decoration-none">
