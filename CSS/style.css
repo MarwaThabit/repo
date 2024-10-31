@@ -93,8 +93,10 @@ textarea::placeholder{
     box-shadow: 0px 0px  10px 2px rgba(0, 0, 0, 0.2);
 }
 @media (max-width : 1600px) {
-    .news>div{
+    .news >div{
         position: relative;
+    }
+    .news >div:nth-child(even){
         display: flex;
         flex-direction: row-reverse;
     }
@@ -104,27 +106,27 @@ textarea::placeholder{
         top: 0;
         height: 100%;
     }
-    .new>div:nth-child(even) img{
+    .news>div:nth-child(even) img{
         clip-path: polygon(0 0, 72% 0%, 57% 100%, 0 100%);
         left: 0;
     }
-    .new>div:nth-child(odd) img{
+    .news>div:nth-child(odd) img{
         clip-path: polygon(28% 0, 100% 0%, 100% 100%, 43% 100%);
         right: 0;
     }
 }
 @media(max-width : 576px){
-    .news>div{
+    .news >div:nth-child(even),.news >div:nth-child(odd){
         display: flex;
         flex-direction: column;
         height: 400px;
         overflow-y: hidden;
     }
-    .news>div img{
+    .news>div:nth-child(even) img,.news>div:nth-child(odd) img{
         clip-path: none;
         position: static;
         width: 100%;
-        height: auto;
+        height: 200px;
         border-bottom-left-radius:  0 !important;
         border-bottom-right-radius: 0 !important;
         order: 1;
@@ -147,4 +149,7 @@ textarea::placeholder{
     .news>div  div:nth-child(4) button:nth-child(1){
         margin-right: 7px;
     }
+}
+.dropdown-menu li:focus ~:-webkit-any(.dropdown a::first-letter){
+    color: red;
 }
